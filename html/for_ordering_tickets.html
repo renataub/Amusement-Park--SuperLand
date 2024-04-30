@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סופרלנד</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/for_ordering_tickets.css">
+</head>
+<body>
+  <header class="container-fluit">
+    <div class="container">
+        <nav>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li> <a href="../html/home.html">דף הבית</a></li>
+                <li><a href="../html/about.html">אודות</a></li>
+                <li><a href="../html/directions_and_opening_hours.html">שעות פעילות ודרכי הגעה</a></li>
+                <li><a href="../html/for_ordering_tickets.html">להזמנת כרטיסים</a></li>
+                <li><a href="../html/pictures.html">תמונות</a></li>
+            </ul>
+        </nav>
+        <img src="../pictures.home/סקיצות לוגו 1.png" class="logo">
+    </div>
+</header>
+    <div id="container">
+        <h1>&bull; טופס הזמנת כרטיסים &bull;</h1>
+        <div class="underline">
+        </div>
+        <div class="icon_wrapper">
+          <div class="icon" viewBox="0 0 145.192 145.192">
+           <img src="../pictures.home/סקיצות לוגו 1.png" class="imgform">
+          </div>
+        </div>
+        <form action="#" method="post" id="contact_form">
+          <div class="secondname">
+            <label for="name"></label>
+            <input type="text" placeholder="שם פרטי:" name="secondname" id="secondname_input" required>
+          </div>
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="שם משפחה:" name="name" id="name_input" required>
+          </div>
+          <div class="id">
+            <label for="name"></label>
+            <input type="text" placeholder="תעודת זהות:" name="id" id="id_input" minlength="9" maxlength="9" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="כתובת מייל:" name="email" id="email_input" required>
+          </div>
+          <div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="מספר טלפון:" name="telephone" id="telephone_input" minlength="10" maxlength="10" required>
+          </div>
+        <div>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>בחר סוג כרטיס:</option>
+              <option>ילד מתחת 90ס"מ</option>
+              <option>יחיד מעל 90ס"מ</option>
+              <option>תושב העיר</option>
+            </select>
+          </div>
+          <div class="checkbox">
+          <label for="checkbox">האם אתה מעונין לקבל הודעות?</label>
+            <input type="checkbox">
+        </div>
+
+          <div class="submit">
+            <input type="submit" value="  הזמן  " id="form_button" />
+          </div>
+        </form>
+      </div>
+    <div class="footer_img"></div>
+    <footer>
+      <div class="container-fluit">
+          <div class="container">
+              <h2>עיר השעשועים בע"מ</h2>
+              <p>
+                  חברת עיר השעשועים, נוסדה ב-1975,
+                  הינה הבעלים של פארקי השעשועים והבילוי
+                  המובילים בארץ: "לונה פארק" בתל אביב,
+                  "סופרלנד" בראשון לציון,
+                  ופארק המים "מימדיון" בגני יהושע בתל אביב.
+              </p>
+          </div>
+          <div class="container">
+              <h2>עוד באתר</h2>
+              <p>
+                  <ul>
+                      <li> <a href="../html/home.html">דף הבית</a></li>
+                      <li><a href="../html/about.html">אודות</a></li>
+                      <li><a href="../html/directions_and_opening_hours.html">שעות פעילות ודרכי הגעה</a></li>
+                      <li><a href="../html/for_ordering_tickets.html">להזמנת כרטיסים</a></li>
+                      <li><a href="../html/pictures.html">תמונות</a></li>
+                  </ul>
+              </p>
+          </div>
+          <div class="container">
+              <h2>צור קשר</h2>
+              <p>
+                  בנושא אירועים, קבוצות,
+                  קייטנות ובתי ספר
+                  נא לפנות למחלקת השיווק.
+              </p>
+              <h2>כתובתנו:</h2>
+              <p>
+                  סופרלנד ראשל"צ
+                  שדרות מרילנד 5 ראשל"צ
+                  ת.ד 5023 ראשל"צ מיקוד 75105
+                  טלפון לבירור שעות פעילות ופרטים נוספים:
+                  03-9619065
+              </p>
+          </div>
+          <div class="container">
+              <h2>גם ברשתות החברתיות</h2>
+              <div class="links">
+                  <a href="https://www.facebook.com/superland.IL/" target="_blank"><img src="../links/facebook-logo.png" alt="" height="50" width="50"></a>
+                  <a href="https://www.instagram.com/superland.il/" target="_blank"><img src="../links/twitter.png" alt="" height="50" width="50"></a> 
+                  <a href="https://www.youtube.com/channel/UC6ILyEYWh9g8O6M8zfHYyZw" target="_blank"><img src="../links/youtube.png" alt="" height="50" width="50"></a>                
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: start;
+    font-size:x-large;
+    margin-right: 40%;
+    
+}
+.position{
+    border: solid 3px rgb(158, 113, 113);
+    border-radius: 5%;
+    max-width: 600px;
+    margin: 60px auto;
+    position: relative;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    padding: 32px;
+    
+}
+.text{
+    margin: 36px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+@media screen and (max-width: 420px) {
+    body{
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+    }
+    .position {
+        max-width: 420px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}

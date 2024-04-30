@@ -1,0 +1,19 @@
+h1{
+  text-align: right;
+  font-size: 40px;
+  font-style: italic;  
+}
+.mark{
+    text-align: right;
+    font-size: 18px;
+}
+h4{
+    text-align: right;
+    font-size: 20px;
+}
+p{
+    text-align: right;
+}
+.flex-container{
+    padding: 16px;
+}

@@ -1,0 +1,216 @@
+* {
+    block-size: border box;
+}
+
+body {
+    margin: 0;
+}
+
+.conteiner-fluit {
+    width: 10px;
+    padding: 0 32px;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 570px;
+    background-image: url(../pictures.home/2608.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+header .container {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 16px;
+    font-size: large;
+    transition: 800ms;
+    border-left: 1px solid white ;
+}
+
+header nav a:hover {
+    
+    border-bottom: solid;
+    color: rgb(245, 108, 131);
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    filter: drop-shadow(8px 8px 10px rgb(245, 108, 131));
+}
+#tickets a{
+    color: rgb(245, 108, 131);
+    font-size: larger;
+    position: fixed;
+    z-index: 90;
+}
+.footer_img{
+    min-height: 300px;
+    background-image: url(../pictures.home/למטה\ מתקנים.png);
+    background-color:white ;
+    background-size: 450px;
+}
+
+footer{
+    min-height: 400px;
+    background-color: rgb(50, 38, 66);
+    
+}
+footer .container-fluit{
+    display: flex;
+    padding: 0 16px;
+    color: white;
+}
+footer .container{
+    flex: 1;
+    margin: 3%;
+    text-align: start;
+
+}
+footer a{
+    color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway); 
+
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgb(158, 113, 113);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 1050px) {
+    header {
+      min-height: 500px;
+  }
+    header nav a {
+      color:rgb(50, 38, 66) ;
+      
+    }
+    .menu-button-container {
+      display: flex;
+      margin: 50px;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      right: 0;
+      flex-direction: column;
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid ;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: rgb(158, 113, 113);
+      background-color: white;
+    }
+  }
+  @media (max-width: 768px) {
+    header {
+        min-height: 400px;
+    }
+    footer .container-fluit{
+        display:grid;
+        
+    }
+    footer .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+    @media (max-width: 420px){
+      header {
+        min-height: 300px;
+     }
+    }
+    
+  

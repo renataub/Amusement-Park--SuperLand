@@ -1,0 +1,157 @@
+html {
+    font-family: 'Montserrat', Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input {
+    line-height: normal;
+}
+
+
+#container {
+    border: solid 3px rgb(158, 113, 113);
+    border-radius: 5%;
+    max-width: 600px;
+    margin: 60px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: rgb(50, 38, 66);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    
+}
+
+.imgform {
+    height: 200px;
+    width: 600px;
+    margin: -70px 2%;
+
+}
+
+.secondname {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select {
+    background: none;
+    border: none;
+    border-bottom: solid 2px rgb(50, 38, 66);
+    color: rgb(50, 38, 66);
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+}
+
+input[type='text']:focus,
+[type='email']:focus
+ {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat left;
+    outline: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+
+#form_button {
+    background: none;
+    border: solid 2px rgb(50, 38, 66);
+    color: rgb(50, 38, 66);
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    transition: all 800ms;
+    margin: 5% 32%;
+}
+
+#form_button:hover {
+    background: rgb(50, 38, 66);
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    #container {
+        border-radius:inherit;
+        max-width: 350px;
+        margin-bottom: -150px;
+    }
+    .imgform {
+        height: 75px;
+        width: 225px;
+        margin: -70px 15%;
+    
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'],
+    [type='email'],
+    select
+     {
+        font-size: 0.875em;
+    }
+    #form_button {
+        margin-bottom: -50%;
+    }
+    
+}

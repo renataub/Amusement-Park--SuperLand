@@ -1,0 +1,79 @@
+.script {
+
+    background-color: white;
+    color:rgb(158, 113, 113);
+}
+
+.script .container {
+    min-height: 150px;
+    padding: 8px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: large;
+}
+#text1{
+    color: rgb(110, 19, 146);
+}
+#text2{
+    color:rgb(158, 113, 113);
+}
+
+.script a{
+
+    color:rgb(158, 113, 113);
+}
+
+main {
+    min-height: 200px;
+    background-color: rgb(158, 113, 113);
+    color: black;
+    position: relative;
+}
+
+main .container {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .box {
+    background: white;
+    width: 25%;
+    height: 300px;
+    z-index: 89;
+    margin: 12px;
+    padding: 16px;
+    text-align: center;
+    justify-content: space-between;
+    height: inherit;
+}
+
+main img {
+    width: 100%;
+}
+main a{
+    color: black;
+}
+.links{
+    height: "50";
+    width: "50";
+}
+@media only screen and (max-width: 768px) {
+
+    main .container{
+        justify-content: center;
+    }
+    main .box{
+        width: 80%;
+        height: 80%;
+    }
+    main img {
+        width: 80%;
+    }
+
+  }
+  
